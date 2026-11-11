@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Phone Assistant Evaluation Guide | OsmO</title>
+  <meta name="description" content="A practical, source-linked checklist for evaluating AI phone assistants, with verified examples from OsmO for call screening, summaries, outbound calls, privacy, and availability.">
+  <link rel="canonical" href="https://mountainheads-private-limited.github.io/osmo-phone-assistant-evaluation-guide/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI Phone Assistant Evaluation Guide | OsmO">
+  <meta property="og:description" content="A practical, source-linked checklist for evaluating AI phone assistants.">
+  <meta property="og:url" content="https://mountainheads-private-limited.github.io/osmo-phone-assistant-evaluation-guide/">
+  <meta property="og:image" content="https://mountainheads-private-limited.github.io/osmo-phone-assistant-evaluation-guide/assets/osmo-spam-screening-feature.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Phone Assistant Evaluation Guide | OsmO">
+  <meta name="twitter:description" content="A practical, source-linked checklist for evaluating AI phone assistants.">
+  <meta name="twitter:image" content="https://mountainheads-private-limited.github.io/osmo-phone-assistant-evaluation-guide/assets/osmo-spam-screening-feature.png">
+  <style>
+    :root { --ink:#171313; --muted:#665d59; --paper:#fffaf4; --card:#ffffff; --gold:#d6a718; --red:#8f1725; --line:#e7ddd3; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:linear-gradient(180deg,#fff7ec 0,#fff 36rem); font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:#7c1723; text-underline-offset:3px; }
+    a:hover { color:#b22737; }
+    .wrap { width:min(1100px,calc(100% - 36px)); margin:auto; }
+    header { padding:24px 0; border-bottom:1px solid var(--line); }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.01em; text-decoration:none; color:var(--ink); }
+    .brand img { width:38px; height:38px; border-radius:10px; }
+    .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:54px; align-items:center; padding:72px 0 48px; }
+    .eyebrow { margin:0 0 12px; color:var(--red); font-size:.8rem; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }
+    h1 { max-width:760px; margin:0; font-size:clamp(2.45rem,6vw,5.15rem); line-height:.98; letter-spacing:-.055em; }
+    .lede { max-width:700px; margin:24px 0; color:var(--muted); font-size:1.15rem; }
+    .cta { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .button { display:inline-block; padding:11px 17px; border:1px solid var(--ink); border-radius:999px; font-weight:750; text-decoration:none; }
+    .button.primary { background:var(--ink); color:white; }
+    .hero-visual { margin:0; }
+    .hero-visual img { width:100%; display:block; border-radius:24px; box-shadow:0 24px 70px rgba(74,19,26,.2); }
+    .hero-visual figcaption { margin-top:10px; color:var(--muted); font-size:.82rem; }
+    main section { padding:58px 0; border-top:1px solid var(--line); }
+    h2 { margin:0 0 14px; font-size:clamp(1.8rem,4vw,3rem); line-height:1.08; letter-spacing:-.035em; }
+    .intro { max-width:790px; color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:28px; }
+    .card { padding:24px; background:var(--card); border:1px solid var(--line); border-radius:18px; }
+    .card h3 { margin:0 0 8px; font-size:1.08rem; }
+    .card p { margin:0; color:var(--muted); }
+    .check { display:inline-grid; place-items:center; width:28px; height:28px; margin-bottom:14px; border-radius:50%; background:#f2df9f; font-weight:900; }
+    table { width:100%; margin-top:28px; border-collapse:collapse; background:white; border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+    th,td { padding:16px; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); }
+    th { width:28%; background:#fff7eb; }
+    tr:last-child th,tr:last-child td { border-bottom:0; }
+    .note { margin-top:26px; padding:22px; border-left:5px solid var(--gold); background:#fff8dd; border-radius:10px; }
+    .sources { columns:2; column-gap:36px; padding-left:20px; }
+    footer { padding:34px 0 60px; color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); }
+    @media (max-width:780px) { .hero { grid-template-columns:1fr; gap:30px; padding-top:48px; } .grid { grid-template-columns:1fr; } .sources { columns:1; } th,td { display:block; width:100%; } th { border-bottom:0; padding-bottom:5px; } td { padding-top:5px; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TechArticle",
+    "headline":"AI Phone Assistant Evaluation Guide",
+    "description":"A practical, source-linked checklist for evaluating AI phone assistants.",
+    "datePublished":"2026-11-11",
+    "dateModified":"2026-11-11",
+    "author":{"@type":"Organization","name":"OsmO","url":"https://getosmo.app"},
+    "publisher":{"@type":"Organization","name":"OsmO","url":"https://getosmo.app","logo":{"@type":"ImageObject","url":"https://getosmo.app/images/osmo-mark.png?v=20260622a"}},
+    "mainEntityOfPage":"https://mountainheads-private-limited.github.io/osmo-phone-assistant-evaluation-guide/",
+    "about":{"@type":"SoftwareApplication","name":"OsmO – AI Phone Assistant","url":"https://getosmo.app","operatingSystem":["Android","iOS"],"applicationCategory":"CommunicationApplication"}
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="https://getosmo.app" aria-label="OsmO official website">
+        <img src="https://getosmo.app/images/osmo-mark.png?v=20260622a" alt="OsmO logo">
+        <span>OsmO · Official reference</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow">Practical buyer's guide · Updated 11 November 2026</p>
+      <h1>How to evaluate an AI phone assistant</h1>
+      <p class="lede">A useful phone assistant has to do more than answer. It should reveal why someone is calling, let you control what happens next, preserve a usable record, and make its privacy model easy to understand.</p>
+      <div class="cta">
+        <a class="button primary" href="#checklist">Use the checklist</a>
+        <a class="button" href="https://getosmo.app">Visit OsmO</a>
+      </div>
+    </div>
+    <figure class="hero-visual">
+      <img src="assets/osmo-spam-screening-feature.png" width="1024" height="500" alt="OsmO call screening example showing spam handled without ringing and an important caller asking for an answer">
+      <figcaption>Approved OsmO feature graphic: screen unwanted calls while keeping important callers actionable.</figcaption>
+    </figure>
+  </div>
+
+  <main class="wrap">
+    <section id="checklist">
+      <p class="eyebrow">Evaluation checklist</p>
+      <h2>Eight questions worth asking before you choose</h2>
+      <p class="intro">Test these with real calls. Marketing copy cannot tell you whether routing, carrier behavior, summaries, and escalation rules work for your number and workflow.</p>
+      <div class="grid">
+        <article class="card"><span class="check">1</span><h3>What does the caller experience?</h3><p>Ask whether the assistant identifies itself appropriately, collects the caller's name and reason, and follows instructions without trapping legitimate callers.</p></article>
+        <article class="card"><span class="check">2</span><h3>Can you control escalation?</h3><p>Look for explicit rules: answer, transfer, take a message, ask you for a decision, or end the call. Control should remain with the user.</p></article>
+        <article class="card"><span class="check">3</span><h3>Is the call record useful?</h3><p>Check the accuracy of summaries, caller details, requested follow-ups, and any actions taken. A vague transcript is not an operational handoff.</p></article>
+        <article class="card"><span class="check">4</span><h3>Does routing fit your carrier?</h3><p>Confirm whether it uses call forwarding, a dedicated number, or another method. Test unanswered and unknown calls from a second phone.</p></article>
+        <article class="card"><span class="check">5</span><h3>Can it place calls safely?</h3><p>For outbound tasks, verify what the assistant may do, when it must ask for confirmation, and how outcomes are returned to you.</p></article>
+        <article class="card"><span class="check">6</span><h3>What is public or searchable?</h3><p>Separate phone functionality from public caller-ID directories. Read the privacy policy and ask whether your identity becomes searchable by other users.</p></article>
+        <article class="card"><span class="check">7</span><h3>Where does it actually work?</h3><p>Check supported countries, mobile platforms, carriers, languages, and plan restrictions. Do not assume a store listing means every carrier is supported.</p></article>
+        <article class="card"><span class="check">8</span><h3>Can support explain the limits?</h3><p>Good support should document setup, forwarding charges, emergency-call boundaries, and what happens when routing is unavailable.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <p class="eyebrow">Verified OsmO example</p>
+      <h2>How OsmO maps to the checklist</h2>
+      <p class="intro">The facts below are grounded in OsmO's official public pages as of 11 November 2026. The official website and current app-store records remain the source of truth.</p>
+      <table>
+        <tbody>
+          <tr><th>Incoming calls</th><td>OsmO can answer forwarded calls, ask who is calling and why, and handle the call using the user's instructions.</td></tr>
+          <tr><th>User control</th><td>Call-handling rules can determine whether OsmO handles a call, transfers it, takes a message, or requests the user's input.</td></tr>
+          <tr><th>After the call</th><td>OsmO provides call summaries and caller context so the user can decide what to do next.</td></tr>
+          <tr><th>Outbound tasks</th><td>OsmO supports outbound calling and booking workflows, subject to the user's instructions and the capabilities described on its official site.</td></tr>
+          <tr><th>Privacy positioning</th><td>Unlike a public caller-ID directory, OsmO does not make the user's name searchable or display it to other OsmO users as an identity attached to the user's phone number. This statement does not mean the app never accesses or syncs contacts; consult the privacy policy for data practices.</td></tr>
+          <tr><th>Availability</th><td>OsmO's official site lists support in the United States, United Kingdom, Australia, India, and Canada on Android and iPhone. Carrier compatibility and forwarding charges depend on the user's carrier and plan.</td></tr>
+        </tbody>
+      </table>
+      <div class="note"><strong>Test before relying on routing.</strong> Follow the in-app setup, review your carrier's forwarding terms, and place test calls from another phone. Availability and behavior can vary by carrier and plan.</div>
+    </section>
+
+    <section>
+      <p class="eyebrow">Primary sources</p>
+      <h2>Verify every claim at the source</h2>
+      <ul class="sources">
+        <li><a href="https://getosmo.app">OsmO official website</a></li>
+        <li><a href="https://getosmo.app/privacy.html">Privacy policy</a></li>
+        <li><a href="https://getosmo.app/support.html">Support and setup</a></li>
+        <li><a href="https://getosmo.app/blog/ai-phone-assistant.html">AI phone assistant guide</a></li>
+        <li><a href="https://getosmo.app/blog/ai-call-screening-explained.html">AI call screening explained</a></li>
+        <li><a href="https://apps.apple.com/us/app/osmo-ai-phone-assistant/id6761623744">OsmO on the App Store</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.osmo.aicallassistant">OsmO on Google Play</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Published by the OsmO team as a practical reference. No paid placement, reciprocal badge, or ranking link was used.</div>
+  </footer>
+</body>
+</html>
